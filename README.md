@@ -29,3 +29,12 @@ This is a simple rule-based chatbot implemented in Python. It can respond to bas
 
 ## Example Interaction
 
+Chatbot: Hi! I'm your friendly chatbot. Type 'exit' or 'quit' to end the conversation.
+You: Hello
+Chatbot: Hello! How can I assist you today?
+You: What's the time?
+Chatbot: The current time is 14:35:20.
+You: Thank you
+Chatbot: You're welcome! Happy to help.
+You: exit
+Chatbot: Goodbye! Have a great day!
