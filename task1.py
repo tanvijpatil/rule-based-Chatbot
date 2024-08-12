@@ -1,8 +1,7 @@
 def chatbot_response(user_input):
-    # Converting the user input to lowercase to make the chatbot case-insensitive
+
     user_input = user_input.lower()
 
-    # Rule-based responses
     if "hello" in user_input or "hi" in user_input:
         return "Hello! How can I assist you today?"
     elif "how are you" in user_input:
@@ -38,23 +37,19 @@ def chatbot_response(user_input):
     else:
         return "Sorry, I didn't understand that. Can you please rephrase?"
 
-# Main loop to interact with the chatbot
 def chat():
     print("Chatbot: Hi! I'm your friendly chatbot. Type 'exit' or 'quit' to end the conversation.")
     
     while True:
-        # Taking input from the user
+
         user_input = input("You: ")
-        
-        # Exit condition
+
         if user_input.lower() in ["exit", "quit"]:
             print("Chatbot: Goodbye! Have a great day!")
             break
-        
-        # Generating and printing chatbot response
+
         response = chatbot_response(user_input)
         print(f"Chatbot: {response}")
 
-# Run the chatbot
 if __name__ == "__main__":
     chat()
